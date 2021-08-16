@@ -1,0 +1,8 @@
+[Service]
+Type=simple
+User=<username>
+WorkingDirectory=/home/<username>/moviestar
+ExecStart=/bin/pipenv run prod
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
